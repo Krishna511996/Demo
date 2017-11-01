@@ -16,7 +16,7 @@
   <tbody>
     <% @user_transactions.each do |user_transaction| %>
       <tr>
-        <td><%= user_transaction.user %></td>
+        <td><%= user_transaction.user.name %></td>
         <td><%= user_transaction.transaction_type %></td>
         <td><%= user_transaction.transaction_date %></td>
         <td><%= user_transaction.transaction_amount %></td>
